@@ -108,7 +108,10 @@ except ImportError:
     sys.exit()
 
 __ScriptVersion__ = '1.0.0'
-
+try:
+    os.mkdir('logs')
+except:
+    pass
 
 class Md5_Bruteforce(object):
     def __init__(self):
