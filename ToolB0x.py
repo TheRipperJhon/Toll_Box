@@ -1016,8 +1016,11 @@ class crawlerEMail(object):
             a = sess.get(binascii.a2b_base64('aHR0cDovL3ZpZXdkbnMuaW5mby93aG9pcy8/ZG9tYWluPQ==') + url,
                          timeout=5, headers=self.headers)
             whoisemail = re.findall('Admin Email: (.*)<br>', a.text)
-            rezwhois = whoisemail[0].split('<')[0]
-            self.emailz[rezwhois] = 'Address'
+            try:
+                rezwhois = whoisemail[0].split('<')[0]
+                self.emailz[rezwhois] = 'Address'
+            except:
+                pass
             get_site = requests.get('http://' + url, timeout=5)
             Emails = re.findall('[\w\.-]+@[\w\.-]+', get_site.text)
             for Email in Emails:
