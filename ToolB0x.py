@@ -228,8 +228,8 @@ class Zone_H_urlHunter(object):
         color.cls()
         color.print_logo()
         defacer = raw_input('   Defacer Name: ')
-        zh = '   Enter ZH ID: '
-        phpsessid = '   Enter PHPSESSID: '
+        zh = raw_input('   Enter ZH ID: ')
+        phpsessid = raw_input('   Enter PHPSESSID: ')
         self.ZonE_H_Url_Hunter(defacer, zh , phpsessid)
     def ZonE_H_Url_Hunter(self, __Defacer, __ZH, __PHPSESSID):
         if len(__Defacer) & len(__ZH) & len(__PHPSESSID) <= 0:
