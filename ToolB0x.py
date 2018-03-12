@@ -1028,6 +1028,8 @@ class crawlerEMail(object):
             results = set(self.emailz)
             for result in results:
                 color.crawlerResult(result)
+            if len(self.emailz) ==0:
+                print '       [-] Email Not Found!'
         except requests.ConnectTimeout:
             color.crawlerTimeout()
             sys.exit()
