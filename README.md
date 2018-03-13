@@ -5,3 +5,18 @@ Icg ToolB0x
 
 this software was created just for penetration testing and information gathering! So we don't Accept any responsibility for any illegal usage.
 
+[+] MD5 Hash Cracker
+[+] Zone-h Poster
+[+] Zone-h Url Grabber
+[+] Sqli Finder [With ip Address]
+[+] Whois Tools
+[+] Dorker
+[+] Reverse ip
+[+] zip/rar password Cracker
+[+] telegram/instagram username checker
+[+] ICG wordpress Scanner
+[+] Email Crawler
+[+] Base64 encode/Decode
+[+] Wordpress Hash BruteForce
+[+] pyc decompiler
+[+] CMs Checker
